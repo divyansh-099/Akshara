@@ -1,0 +1,276 @@
+/* ------------------------------
+   Project Akshara ❤️
+   Part 2A - Base Styles
+-------------------------------*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    overflow:hidden;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#0f1020;
+}
+
+/* Animated Background */
+
+.background{
+    position:fixed;
+    width:100%;
+    height:100%;
+    background:linear-gradient(-45deg,
+    #ff7eb3,
+    #ff758c,
+    #a18cd1,
+    #6a82fb);
+
+    background-size:400% 400%;
+    animation:bgMove 12s ease infinite;
+    z-index:-5;
+}
+
+@keyframes bgMove{
+
+0%{
+background-position:0% 50%;
+}
+
+50%{
+background-position:100% 50%;
+}
+
+100%{
+background-position:0% 50%;
+}
+
+}
+
+/* Glass Card */
+
+.mainCard{
+
+width:90%;
+max-width:420px;
+
+padding:40px;
+
+border-radius:30px;
+
+text-align:center;
+
+background:rgba(255,255,255,.15);
+
+backdrop-filter:blur(20px);
+
+box-shadow:
+
+0 8px 35px rgba(0,0,0,.25);
+
+color:white;
+
+}
+
+/* Heading */
+
+.mainCard h1{
+
+font-size:2rem;
+
+margin-top:10px;
+
+line-height:1.3;
+
+}
+
+.name{
+
+margin-top:15px;
+
+font-size:2.2rem;
+
+font-family:'Great Vibes',cursive;
+
+color:#fff;
+
+}
+
+.from{
+
+margin-top:20px;
+
+font-size:16px;
+
+opacity:.9;
+
+}
+
+/* Buttons */
+
+.buttons{
+
+display:flex;
+
+justify-content:center;
+
+gap:18px;
+
+margin-top:35px;
+
+}
+
+button{
+
+padding:15px 35px;
+
+border:none;
+
+border-radius:50px;
+
+font-size:18px;
+
+cursor:pointer;
+
+transition:.3s;
+
+font-weight:bold;
+
+}
+
+/* YES */
+
+#yesBtn{
+
+background:#ff4f8b;
+
+color:white;
+
+box-shadow:0 0 20px #ff4f8b;
+
+}
+
+#yesBtn:hover{
+
+transform:scale(1.1);
+
+}
+
+/* NO */
+
+#noBtn{
+
+background:white;
+
+color:#ff4f8b;
+
+position:relative;
+
+}
+
+/* Love Page */
+
+#lovePage{
+
+display:none;
+
+position:fixed;
+
+inset:0;
+
+background:linear-gradient(135deg,#ff8acb,#b388ff);
+
+justify-content:center;
+
+align-items:center;
+
+padding:20px;
+
+}
+
+.loveCard{
+
+background:white;
+
+padding:35px;
+
+border-radius:25px;
+
+max-width:600px;
+
+text-align:center;
+
+box-shadow:0 10px 40px rgba(0,0,0,.25);
+
+}
+
+.loveCard h2{
+
+margin:15px 0;
+
+color:#ff4f8b;
+
+}
+
+#letter{
+
+line-height:1.8;
+
+color:#555;
+
+margin:20px 0;
+
+white-space:pre-line;
+
+}
+
+#restart{
+
+background:#ff4f8b;
+
+color:white;
+
+padding:12px 25px;
+
+border:none;
+
+border-radius:30px;
+
+}
+
+/* Music Button */
+
+.musicButton{
+
+position:fixed;
+
+top:20px;
+
+right:20px;
+
+width:55px;
+
+height:55px;
+
+background:white;
+
+border-radius:50%;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+font-size:24px;
+
+cursor:pointer;
+
+box-shadow:0 0 15px rgba(0,0,0,.2);
+
+}
